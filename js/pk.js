@@ -1,7 +1,7 @@
 // change this if you want to change the default list of topics
 var topics = {
 	"Freeform": ["Add your own topics", "One per line"],
-	"Agile": [
+	"Joomla": [
 		"Agile Tools",
 		"Agile",
 		"Automated Testing",
@@ -373,8 +373,8 @@ jQuery(function($){
 });
 
 function load_topics(topic) {
-  if (topic == "Agile") {
-	$( "#topics" ).val(topics.Agile.join("\n"));
+  if (topic == "Joomla") {
+	$( "#topics" ).val(topics.Joomla.join("\n"));
   } else {
 	$( "#topics" ).val(topics.Freeform.join("\n"));
   }
