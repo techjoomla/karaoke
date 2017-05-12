@@ -1,39 +1,32 @@
 // change this if you want to change the default list of topics
 var topics = {
-	"Freeform": ["Add your own topics", "One per line"],
+	"FML": [
+		"Hopes and Fears",
+		"The last book you read",
+		"This presentation",
+		"Too much feedback",
+  	"Your boss",
+		"Your company",
+		"Your dream job",
+		"Your favorite pet",
+		"Your favourite movie",
+		"Your ideal relaxing day",
+		"Your last holiday",
+		"Your weekend",
+    ],
+   "Community": [
+    "hello world",
+   ] ,
 	"Joomla": [
-		"Agile Tools",
-		"Agile",
 		"Automated Testing",
 		"Build quality in",
-		"Burndown Charts",
-		"Continuous Delivery",
-		"Continuous Improvement",
-		"Daily Stand-up",
-		"Discovery",
 		"Don't try this at home",
-		"Door to door sales",
 		"Empowerment",
 		"Failure",
-		"Guilds, Tribes and Squads",
-		"Happy Marriages",
-		"Hopes and Fears",
 		"If you were born 100 years ago",
-		"Traffic in this city",
 		"Leadership",
 		"Living the 'Dream'",
-		"My worst agile experience",
-		"Pair Programming",
-		"Planning ",
-		"Planning Poker",
-		"Presentation Karaoke",
-		"Product Ownership",
 		"Project Managers",
-		"Retrospective",
-		"SDLC",
-		"Scaling Agile",
-		"Scrum Masters",
-		"Scrum",
 		"Spending time with your family",
 		"Star Trek",
 		"Star Wars",
@@ -43,28 +36,8 @@ var topics = {
 		"Test-Driven Development",
 		"Testing",
 		"The calm before the storm",
-		"The last book you read",
-		"This presentation",
-		"Too much feedback",
 		"Training",
-		"Velocity",
-		"What it takes to be a Scrum Master",
-		"Your boss",
-		"Your company",
-		"Your dream job",
-		"Your favorite pet",
-		"Your favourite movie",
-		"Your ideal relaxing day",
-		"Your last holiday",
-		"Your weekend",
-		"#noprojects",
-		"#noestimates",
-		"Zeppelins and Airships",
-		"Lean Startup",
 		"Road Trip",
-		"Cat People",
-		"Heavy Metal",
-		"Baby Boomers vs Millenials"
 	]
 };
 
@@ -374,10 +347,14 @@ jQuery(function($){
 
 function load_topics(topic) {
   if (topic == "Joomla") {
-	$( "#topics" ).val(topics.Joomla.join("\n"));
+  	$( "#topics" ).val(topics.Joomla.join("\n"));
+  } else if (topic == "Community") {
+	$( "#topics" ).val(topics.Community.join("\n"));
   } else {
-	$( "#topics" ).val(topics.Freeform.join("\n"));
+	$( "#topics" ).val(topics.FML.join("\n"));
+    
   }
+
 }
 
 function pick_topic() {
